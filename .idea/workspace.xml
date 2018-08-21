@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="bf2a07d6-52f1-4602-92c8-2fe5e1c406bc" name="Default" comment="" />
+    <list default="true" id="bf2a07d6-52f1-4602-92c8-2fe5e1c406bc" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -51,11 +53,6 @@
             <path>
               <item name="django_tutorial" type="b2602c69:ProjectViewProjectNode" />
               <item name="django_tutorial" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="django_tutorial" type="b2602c69:ProjectViewProjectNode" />
-              <item name="django_tutorial" type="462c0819:PsiDirectoryNode" />
-              <item name="polls" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
