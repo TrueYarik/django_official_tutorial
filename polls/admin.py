@@ -3,13 +3,23 @@ from .models import Question, Choice
 # Register your models here.
 
 
+class ChoiceInLine(admin.TabularInline):
+    model = Choice
+    extra = 1
+
+
 class QuestionAdmin(admin.ModelAdmin):
-    list_display = ('id', 'question_text', 'pub_date')
+    list_display = ('question_text', 'pub_date', 'was_published_recently')
+    list_filter = ['pub_date']
+    search_fields = ['question_text']
+    fieldsets = [
+        (None, {'fields': ['question_text']}),
+        ('Date information', {'fields': ['pub_date']}),
+    ]
+    inlines = [ChoiceInLine]
 
 
-class ChoiceAdmin(admin.ModelAdmin):
-    list_display = ('id', 'choice_text', 'votes')
+
 
 
 admin.site.register(Question, QuestionAdmin)
-admin.site.register(Choice, ChoiceAdmin)
